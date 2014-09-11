@@ -32,3 +32,6 @@ scalacOptions ++= Seq(
 )
 
 testOptions += Tests.Argument(TestFrameworks.JUnit, "-v")
+
+
+seq(Revolver.settings: _*)
