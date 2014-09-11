@@ -5,5 +5,19 @@
 # Home page
 GET     /                           controllers.Application.index
 
+# MIL CS page
+GET     /mil_cs/*name               controllers.Application.milCS(name)
+
+# OrgAdmin page
+GET     /org_admin/*name            controllers.Application.orgAdmin(name)
+
+# Teacher page
+GET     /teacher/*name              controllers.Teacher.home(name)
+
+# Student page
+GET     /student/*name              controllers.Student.home(name)
+GET     /student_gradebook/*name    controllers.Student.gradebook(name)
+GET     /student_courses/*name      controllers.Student.courses(name)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
