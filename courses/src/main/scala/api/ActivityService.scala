@@ -10,15 +10,15 @@ class ActivityService(messenger: ActorRef)(implicit executionContext: ExecutionC
 
   import ActivityActor._
 
-  /*
-  implicit val sendMessageFormat = jsonFormat2(SendMessage)
+//  implicit val sendMessageFormat = jsonFormat2(SendMessage)
 
   val route =
     path("message") {
       post {
-        handleWith { sm: SendMessage => messenger ! sm; "{}" }
+//        handleWith { sm: SendMessage => messenger ! sm; "{}" }
+        complete("TODO")
       }
     }
-    */
+
 
 }
