@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: String)
 
 <!DOCTYPE html>
 
@@ -6,11 +6,15 @@
     <head>
         <title>@title</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <link rel="shortcut icon" type="image/ico" href="@routes.Assets.at("images/favicon.ico")">
         <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
     </head>
     <body>
-        <img src="@routes.Assets.at("images/millogo.png")">
-        @content
+        <img src="@routes.Assets.at("images/worldmap.png")">
+        <p>Select your role:</p>
+        <p><a href="@routes.Student.home("Jake")">Student</link></p>
+        <p><a href="@routes.Teacher.home("Jake")">Teacher</link></p>
+        <p><a href="@routes.Application.orgAdmin("Jake")">OrgAdmin</link></p>
+        <p><a href="@routes.Application.milCS("Jake")">MIL CS</link></p>
     </body>
 </html>

@@ -5,8 +5,8 @@ import play.api.mvc._
 
 object Application extends Controller {
 
-  def index = Action {
-    Ok(views.html.index("Welcome to CAP - please sign in."))
+  def main = Action {
+    Ok(views.html.main("CAP Login"))
   }
 
   def milCS(userName: String) = Action {

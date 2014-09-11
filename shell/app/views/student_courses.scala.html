@@ -1,13 +1,14 @@
-@(username: String)
+@(userName: String)
 
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>@username's Courses</title>
+    <title>@userName's Courses</title>
 </head>
 <body>
-  Hi @username - these are your courses.
-  Looks like you're on break! Nothing here!
+    <img src="@routes.Assets.at("images/worldmap.png")">
+    <p>Hi @userName - these are your courses.</p>
+    <p>Looks like you're on break! Nothing here!</p>
 </body>
 </html>

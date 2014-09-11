@@ -1,4 +1,4 @@
-@(username: String)
+@(userName: String)
 
 <!DOCTYPE html>
 <html>
@@ -7,9 +7,11 @@
     <title>Student Home Page</title>
 </head>
 <body>
-    <img src="@routes.Assets.at("images/millogo.png")">
-    Hi @username!
-    This is the Student home page.
-    From here you can view your courses and gradebook.
+    <img src="@routes.Assets.at("images/worldmap.png")">
+    <p>Hi @userName!
+    This is the Student home page.</p>
+    <p>From here you can view your
+        <a href="@routes.Student.courses(userName)">courses</a>
+        and <a href="@routes.Student.gradebook(userName)">gradebook</a>.</p>
 </body>
 </html>
