@@ -16,7 +16,8 @@ object Student extends Controller {
     // Need to ask StudentService for grades for this user.
     // val grades: Future[ws.WSResponse] = WS.url("path/to/grades/webservice").get()
     // Once that works, pass to rendering gradebook page.
-    Ok(views.html.student_gradebook(userName))
+    val grades: String = "Great job - A++!"
+    Ok(views.html.student_gradebook(userName)(grades))
 
 //    Something like this:
 //    Async {
@@ -31,7 +32,8 @@ object Student extends Controller {
     // Need to ask StudentServices for courses for this user.
     // val courses: Future[ws.WSResponse] = WS.url("path/to/courses/webservice").get()
     // Once that works, pass to rendering courses page.
-    Ok(views.html.student_courses(userName))
+    val courses: String = "Looks like you're on break - no courses!"
+    Ok(views.html.student_courses(userName)(courses))
 
 //    Async {
 //      WS.url("path/to/courses/webservice").get().map { courses =>

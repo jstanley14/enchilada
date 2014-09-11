@@ -1,4 +1,4 @@
-@(userName: String)
+@(userName: String)(grades: String)
 
 <!DOCTYPE html>
 <html>
@@ -9,6 +9,6 @@
 <body>
     <img src="@routes.Assets.at("images/worldmap.png")">
     <p>Hi @userName - this is your gradebook!</p>
-    <p>You got an A+! Congrats!</p>
+    <p>@grades</p>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@(userName: String)
+@(userName: String)(courses: String)
 
 <!DOCTYPE html>
 <html>
@@ -9,6 +9,6 @@
 <body>
     <img src="@routes.Assets.at("images/worldmap.png")">
     <p>Hi @userName - these are your courses.</p>
-    <p>Looks like you're on break! Nothing here!</p>
+    <p>@courses</p>
 </body>
 </html>
