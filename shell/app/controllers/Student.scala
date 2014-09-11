@@ -14,7 +14,7 @@ object Student extends Controller {
 
   def gradebook(userName: String) = Action {
     // Need to ask StudentService for grades for this user.
-    val grades: Future[ws.WSResponse] = WS.url("path/to/grades/webservice").get()
+    // val grades: Future[ws.WSResponse] = WS.url("path/to/grades/webservice").get()
     // Once that works, pass to rendering gradebook page.
     Ok(views.html.student_gradebook(userName))
 
@@ -29,7 +29,7 @@ object Student extends Controller {
 
   def courses(userName: String) = Action {
     // Need to ask StudentServices for courses for this user.
-    val courses: Future[ws.WSResponse] = WS.url("path/to/courses/webservice").get()
+    // val courses: Future[ws.WSResponse] = WS.url("path/to/courses/webservice").get()
     // Once that works, pass to rendering courses page.
     Ok(views.html.student_courses(userName))
 
