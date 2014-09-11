@@ -1,4 +1,4 @@
-name := """studshell"""
+name := """shell"""
 
 version := "1.0-SNAPSHOT"
 
