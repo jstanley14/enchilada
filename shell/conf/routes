@@ -6,10 +6,10 @@
 GET     /                           controllers.Application.main
 
 # MIL CS page
-GET     /mil_cs/*name               controllers.Application.milCS(name)
+GET     /mil_cs/*name               controllers.Admin.milCS(name)
 
 # OrgAdmin page
-GET     /org_admin/*name            controllers.Application.orgAdmin(name)
+GET     /org_admin/*name            controllers.Admin.orgAdmin(name)
 
 # Teacher page
 GET     /teacher/*name              controllers.Teacher.home(name)
